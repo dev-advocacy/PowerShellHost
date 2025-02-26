@@ -1,6 +1,6 @@
 # The PowershellHost Sample
 
-![Build Status](https://github.com/your-username/your-repo-name/actions/workflows/msbuild.yml/badge.svg)
+[![Build Status](https://cdn.prod.website-files.com/5e0f1144930a8bc8aace526c/65dd9eb5aaca434fac4f1c7c_Build-Passing-brightgreen.svg)]()
 
 Welcome to the PowershellHost repo. This repo contains several types of samples for Hosting PowerShell Core:
 ## Build

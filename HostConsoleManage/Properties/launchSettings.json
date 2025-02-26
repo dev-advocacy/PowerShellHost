@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "HostConsoleManage": {
-      "commandName": "Project",
-      "commandLineArgs": "--File D:\\DEV\\DEV.3DS\\PowerShellHost\\tests\\Test1.ps1"
-    }
-  }
-}

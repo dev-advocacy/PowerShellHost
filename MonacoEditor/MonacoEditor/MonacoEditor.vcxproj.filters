@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logger.cpp">
+      <Filter>Source Files\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutDlg.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="CertificateDlg.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="WebViewDlg.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>Source Files\WebView2\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="WebViewProfile.cpp">
+      <Filter>Source Files\WebView2</Filter>
+    </ClCompile>
+    <ClCompile Include="WebView2Impl.cpp">
+      <Filter>Source Files\WebView2</Filter>
+    </ClCompile>
+    <ClCompile Include="osutility.cpp">
+      <Filter>Source Files\WebView2\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="UrlCombo.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>Source Files\WebView2\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckFailure.cpp">
+      <Filter>Source Files\WebView2\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="CViewEdit.cpp">
+      <Filter>Source Files\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="LogView.cpp">
+      <Filter>Source Files\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="CViewHTMLEditor.cpp">
+      <Filter>Source Files\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="WebView2Main.cpp">
+      <Filter>Source Files\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="WebView2.cpp">
+      <Filter>Source Files\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="LLMDialog.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="CertificateDlg.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientCertificate.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ColoredControls.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageListBox.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="WebViewDlg.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="logger.h">
+      <Filter>Header Files\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Header Files\WebView2\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="CompositionHost.h">
+      <Filter>Header Files\WebView2\WebView2Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="headersprop.h">
+      <Filter>Header Files\WebView2\WebView2Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="WebView2Impl2.h">
+      <Filter>Header Files\WebView2\WebView2Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="WebViewAuthentication.h">
+      <Filter>Header Files\WebView2\WebView2Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="WebViewEvents.h">
+      <Filter>Header Files\WebView2\WebView2Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="WebViewProfile.h">
+      <Filter>Header Files\WebView2\WebView2Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckFailure.h">
+      <Filter>Header Files\WebView2\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="osutility.h">
+      <Filter>Header Files\WebView2\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>Header Files\WebView2\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="WebView2.h">
+      <Filter>Header Files\WebView2</Filter>
+    </ClInclude>
+    <ClInclude Include="CViewEdit.h">
+      <Filter>Header Files\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="CViewHTMLEditor.h">
+      <Filter>Header Files\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="LogView.h">
+      <Filter>Header Files\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="UrlCombo.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="basic_type.h">
+      <Filter>Header Files\WebView2\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="LLMDialog.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="manifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\pincode.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\certificate.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\WebView2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbarH.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0a3dadc2-6032-41af-8844-b7e4ee73b1e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Dialogs">
+      <UniqueIdentifier>{78beb3ce-3528-4c72-bda2-a8de81ac77b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Logger">
+      <UniqueIdentifier>{5b870985-df95-4c4a-b143-fc3bd993a645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WebView2">
+      <UniqueIdentifier>{05264b46-d8d7-4b43-b132-dc78ce3c40dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ea212bff-99b8-4e66-a106-b516ba85d1a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{c98fdeb4-7cda-4240-be5f-ebbfbe633e1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pkg">
+      <UniqueIdentifier>{8be98308-5b0a-47cc-a6d8-00c788fed118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logger">
+      <UniqueIdentifier>{efd8ace8-7f0c-450a-b9b7-0c1e9a65609f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WebView2\Utility">
+      <UniqueIdentifier>{97bc151c-cda8-4e3c-a61e-ba2271771838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WebView2\WebView2Impl">
+      <UniqueIdentifier>{bcf191c0-e992-45e5-92ae-861c9828299b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WebView2">
+      <UniqueIdentifier>{8cd8957d-757c-4cc2-b10d-b385b6f36685}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dialogs">
+      <UniqueIdentifier>{2b358b1e-9b2d-4435-badc-3199aa53046c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WebView2\Utility">
+      <UniqueIdentifier>{1a246e63-5de8-428d-94c4-4bc483401c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Views">
+      <UniqueIdentifier>{889c41b9-ae9c-4de5-8fc1-e74398b72a9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Views">
+      <UniqueIdentifier>{343d53bb-a671-4b43-8056-d551e90320f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WebView2.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vcpkg.json">
+      <Filter>pkg</Filter>
+    </None>
+    <None Include="vcpkg-configuration.json">
+      <Filter>pkg</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,43 @@
+{
+  "name": "powershellhost",
+  "version-string": "1,0,0,0",
+  "description": "powershellhost application",
+  "dependencies": [
+    {
+      "name": "boost-date-time",
+      "platform": "windows"
+    },
+    {
+      "name": "boost-filesystem",
+      "platform": "windows"
+    },
+    {
+      "name": "boost-log",
+      "platform": "windows"
+    },
+    {
+      "name": "boost-system",
+      "platform": "windows"
+    },
+    {
+      "name": "boost-thread",
+      "platform": "windows"
+    },
+    {
+      "name": "boost-chrono",
+      "platform": "windows"
+    },
+    {
+      "name": "boost-atomic",
+      "platform": "windows"
+    },
+    {
+      "name": "wil",
+      "platform": "windows"
+    },
+    {
+      "name": "nethost",
+      "platform": "windows"
+    }
+  ]
+}

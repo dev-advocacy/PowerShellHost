@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet"
+          data-name="vs/editor/editor.main"
+          href="./min/vs/editor/editor.main.css" />
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+
+        #container {
+            display: flex;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script src="./min/vs/loader.js"></script>
+    <script src="./min/vs/editor/editor.main.nls.js"></script>
+    <script src="./min/vs/editor/editor.main.js"></script>
+    <script>
+        require.config({ paths: { 'vs': './min/vs' } });
+        
+
+        // settings for json
+        monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
+            validate: true,
+            allowComments: false, // comment in json validation
+            schemaValidation: 'error'
+        });
+
+        document.addEventListener("DOMContentLoaded", (event) => {
+            //window.chrome.webview.postMessage('onContentLoaded');
+        });
+
+        var editor = monaco.editor.create(document.getElementById('container'), {
+            value: "$letterArray = 'a','b','c','d'\nforeach ($letter in $letterArray)\n{\nWrite-Host $letter\n}",
+            language: 'powershell',
+            minimap: { enabled: false },
+            theme: "vs-dark",
+            automaticLayout: true
+        });
+
+        editor.getModel().onDidChangeContent(e => {
+            window.chrome.webview.postMessage('onContentChanged');
+        });
+    </script>
+</body>
+</html>

@@ -19,8 +19,7 @@ int main(int argc, char** argv)
 		po::options_description desc("Allowed options");
 		desc.add_options()
 			("help", "produce help message")
-			("file", po::value<std::string>(), "set PowerShell file you run")			
-			("lib", "run PowerShell as a library")
+			("file", po::value<std::string>(), "set PowerShell file you run")
 			("script", "execute as script")
 			("executionPolicy", po::value<int>(), "set execution policy (0: Unrestricted, 1: RemoteSigned, 2: AllSigned, 3: Restricted, 4: Bypass, 5: Undefined)");
 
@@ -42,24 +41,18 @@ int main(int argc, char** argv)
 		}
 
 		PowerShellHostmodule console;
-		if (vm.count("file")) 
+		if (vm.count("file"))
 		{
 			std::string file = vm["file"].as<std::string>();
 			std::wstring wfile = A2W(file.c_str());
-			if (vm.count("lib")) 
+			if (vm.count("script")) {
+				console.run_pwsh_lib(wfile, policy, PowerShellLibType::Script);
+			}
+			else
 			{
-				if (vm.count("script")) {
-					console.run_pwsh_lib(wfile, policy, PowerShellLibType::Script);
-				}
-				else 
-				{
-					console.run_pwsh_lib(wfile, policy, PowerShellLibType::File);
-				}				
+				console.run_pwsh_lib(wfile, policy, PowerShellLibType::File);
 			}
-			else {
-				std::cout << "Please specify either --app or --lib option." << std::endl;
-				return -1;
-			}
+
 		}
 		else {
 			std::cout << "Please specify the --file option." << std::endl;

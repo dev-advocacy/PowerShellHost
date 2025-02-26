@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy /Y /F &quot;$(ProjectDir)bin\Debug\net8.0\NativeHost.dll&quot; &quot;$(SolutionDir)x64\$(Configuration)&quot;&#xD;&#xA;xcopy /Y /F &quot;$(ProjectDir)bin\Debug\net8.0\NativeHost.pdb&quot; &quot;$(SolutionDir)x64\$(Configuration)&quot;&#xD;&#xA;xcopy /Y /F &quot;$(ProjectDir)bin\Debug\net8.0\NativeHost.deps.json&quot; &quot;$(SolutionDir)x64\$(Configuration)&quot;" />
+    <Exec Command="xcopy /Y /F &quot;$(ProjectDir)bin\$(Configuration)\net8.0\NativeHost.dll&quot; &quot;$(SolutionDir)x64\$(Configuration)&quot;&#xD;&#xA;xcopy /Y /F &quot;$(ProjectDir)bin\$(Configuration)\net8.0\NativeHost.pdb&quot; &quot;$(SolutionDir)x64\$(Configuration)&quot;&#xD;&#xA;xcopy /Y /F &quot;$(ProjectDir)bin\$(Configuration)\net8.0\NativeHost.deps.json&quot; &quot;$(SolutionDir)x64\$(Configuration)&quot;" />
   </Target>
 
 </Project>

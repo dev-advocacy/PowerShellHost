@@ -47,3 +47,12 @@ This project allows users to edit and run PowerShell scripts within a native app
 - **Script Execution**: Users can execute PowerShell scripts directly from the editor.
 - **WebView2 Integration**: The Monaco Editor is hosted within a WebView2 control, providing a modern and responsive user interface.
 - **AI Integration**: The Monaco Editor can be integrated with AI services to provide code translation beetween VBScript to PowerShell
+
+## Run
+### Requirements
+- **WebView2** Install from this URL :<br>
+- https://developer.microsoft.com/en-us/microsoft-edge/webview2/consumer?form=MA13LH
+- **PowerShell 7.5** or higher, Install from this URL :<br>
+- https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5
+- **VC Runtime** Install from this URL :<br>
+- https://learn.microsoft.com/en-us/cpp/windows/latest/release-notes/visual-cpp-redistributable-versions?view=msvc-160

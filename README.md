@@ -1,4 +1,7 @@
 # The PowershellHost Sample
+
+![Build Status](https://github.com/your-username/your-repo-name/actions/workflows/msbuild.yml/badge.svg)
+
 Welcome to the PowershellHost repo. This repo contains several types of samples for Hosting PowerShell Core:
 ## Build
 ### Requirements
@@ -56,3 +59,4 @@ This project allows users to edit and run PowerShell scripts within a native app
 - https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5
 - **VC Runtime** Install from this URL :<br>
 - https://learn.microsoft.com/en-us/cpp/windows/latest/release-notes/visual-cpp-redistributable-versions?view=msvc-160
+
